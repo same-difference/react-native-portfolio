@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Dianneth Murillo Portfolio</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <style>
+            .hidden {
+                display: none;
+            }
+            .projects-columns {
+                columns: auto 225px;
+            }
+            .no-break {
+                margin-bottom: 15px;
+                break-inside: avoid;
+            }
+            .break-after {
+                break-after: always;
+            }
+            #home, #art, #projects {
+                background: rgb(207,252,234);
+                background: linear-gradient(0deg, rgba(207,252,234,1) 0%, rgba(207,207,252,1) 100%);
+            }
+        </style>
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg bg-light fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand text-bg-light" href="#">Dianneth Murillo</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" data-bs-theme="light" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" style="border:none">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav nav-underline me-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link active text-bg-light" data-target="home">Home</a></li>
+                        <li class="nav-item"><a class="nav-link text-bg-light" data-target="art">Art</a></li>
+                        <li class="nav-item"><a class="nav-link text-bg-light" data-target="projects">Projects</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div id="home" class="content active min-vh-100 pt-5">
+            <div class="position-absolute top-50 start-50 translate-middle bg-light p-5 mw-100 rounded-3" style="width: 300px">
+                <h2 class="text-center">Hi 👋</h2>
+                <h3 class="text-center">I'm Dianneth</h3>
+                <p class="text-center fw-semibold">Welcome to my portfolio!</p>
+                <p class="pt-2 px-2">Here you'll find some of the things I've been working on this semester.</p>
+                <p class="pt-2 px-2">Click the tabs above to navigate betwen pages.</p>
+            </div>
+        </div>
+
+
+        <div id="art" class="content hidden min-vh-100 pt-5">
+            <h2 class="mx-auto my-5 bg-light p-3 mw-100 text-center rounded-5" style="width: 500px">I Made Some Pixel Art</h2>
+            <div class="w-75 mx-auto">
+                    <div class="mx-auto d-block text-center">
+                        <img src="pixel_art/aloy.png" width="256px"/>
+                    </div>
+                    <br />
+                    <div class="mx-auto d-block text-center">
+                        <img src="pixel_art/boat.png" width="128px"/>
+                        <img src="pixel_art/deer.png" width="128px"/>
+                    </div>
+                    <br />
+                    <div class="mx-auto d-block text-center">
+                        <img src="pixel_art/pizza.png" width="128px"/>
+                        <img src="pixel_art/trigun_cat.png" width="64px"/>
+                    </div>
+                
+            </div>
+        </div>
+        
+
+        <div id="projects" class="content hidden min-vh-100 pt-5">
+            <h2 class="mx-auto my-5 bg-light p-3 mw-100 text-center rounded-5" style="width: 300px">Projects</h2>
+            
+                <div class="projects-columns w-75 mx-auto">
+                <div class="card no-break border-0">
+                    <iframe class="card-img-top" src="https://www.youtube.com/embed/6TuhGnHEnkM?si=1COt5dIiiyJyafRu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <div class="card-body">
+                        <h5 class="card-title">Menu App</h5>
+                        <h6 class="card-subtitle text-body-secondary">React</h6>
+                        <p class="card-text mt-2">This was an app to showcase a restaurant menu.<br><br>I had trouble working with the objects and passing them between React components but eventually figured it out.<br><br>I was aiming for pure functionality hence the 1990s appearance.</p>
+                        <a href="https://github.com/UCF-GaiM/dig4639-s24-react-same-difference/tree/main/labs/lab4" target="_blank" class="card-link">source code</a>
+                    </div>
+                </div>
+                <div class="card no-break border-0">
+                    <iframe class="card-img-top" src="https://www.youtube.com/embed/6rHhh2ll5xo?si=Nl7U8UiJLKOtf6kI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <div class="card-body">
+                        <h5 class="card-title">Exercise App</h5>
+                        <h6 class="card-subtitle text-body-secondary">React Native</h6>
+                        <p class="card-text mt-2">This is an app that can track different kinds of exercises.<br><br>My biggest problems were fixing the stopwatch and making the suggested exericse feature work.<br><br>I again focused solely on funcitonality for this one.</p>
+                        <a href="https://github.com/UCF-GaiM/dig4639-s24-react-same-difference/tree/main/unit2/lab9" target="_blank" class="card-link">source code</a>
+                    </div>
+                </div>
+                <div class="card no-break border-0">
+                    <iframe class="card-img-top" src="https://www.youtube.com/embed/i_rlvVh8n48?si=JSLP5wFv77gAiZnU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <div class="card-body">
+                        <h5 class="card-title">To Do List App</h5>
+                        <h6 class="card-subtitle text-body-secondary">React Native</h6>
+                        <p class="card-text mt-2">Login, register, and put in your tasks with this to-do list app.<br><br>Working with the AsyncLocal stoarge was a pain and I hated it. I got it to work eventually but it wasn't fun.<br><br>More brutalist css styles, as in there is none.</p>
+                        <a href="https://github.com/UCF-GaiM/dig4639-s24-react-same-difference/tree/main/unit2/lab8" target="_blank" class="card-link">source code</a>
+                    </div>
+                </div>
+                <div class="card no-break border-0">
+                    <iframe class="card-img-top" src="https://www.youtube.com/embed/zFEw73mT-0Q?si=Ovr_AZTEX1mDFxV_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <div class="card-body">
+                        <h5 class="card-title">Quiz App</h5>
+                        <h6 class="card-subtitle text-body-secondary">React Native</h6>
+                        <p class="card-text mt-2">Multiple choice, true false, multi-select, and graded answers upon completion.<br><br>Getting the multi-select questions to work properly was the bane of my existence. Objects are such a pain.<br><br>Default styles once again.</p>
+                        <a href="https://github.com/UCF-GaiM/dig4639-s24-react-same-difference/tree/main/unit2/lab10" target="_blank" class="card-link">source code</a>
+                    </div>
+                </div>
+                <div class="card no-break border-0">
+                    <iframe class="card-img-top" src="https://www.youtube.com/embed/vuX1PZy_2AU?si=hGQJp2P8MTg8yKNd" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <div class="card-body">
+                        <h5 class="card-title">Mobile Feature Redesign</h5>
+                        <h6 class="card-subtitle text-body-secondary">Figma</h6>
+                        <p class="card-text mt-2">Texting is bad so I fixed it.<br><br>By that I mean my inbox has no filters and to see spam I have to go to an obscure menu. Hence, redesigning it.<br><br>I went with a more wire-framey aesthetic but couldn't resist putting in dummy data and some color.</p>
+                        <a href="https://www.figma.com/proto/79ahfwGZNpoz1RLdxDRxwt/Exercise-8%3A-Redesign-Mobile-App-Feature?type=design&node-id=2-3&t=TkjySyYQ3vOM1Wwg-1&scaling=min-zoom&page-id=0%3A1&starting-point-node-id=2%3A3&mode=design" target="_blank" class="card-link">figma prototype</a>
+                    </div>
+                </div>
+                <div class="card no-break border-0">
+                    <iframe class="card-img-top" src="https://www.youtube.com/embed/vuX1PZy_2AU?si=hGQJp2P8MTg8yKNd" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <div class="card-body">
+                        <h5 class="card-title">Flash Card App Design</h5>
+                        <h6 class="card-subtitle text-body-secondary">Figma</h6>
+                        <p class="card-text mt-2">I made a cute little flash card app.<br><br>Figuring out the community aspect of this pretend flash card app was a fun exercise.<br><br>I made this one all cute and pastel with fun icons and carried a bit of that influence over to this website.</p>
+                        <a href="https://www.figma.com/proto/o8IvwcNBZxYc206MUO1QMz/Exercise-9%3A-Design-Flash-Card-App?type=design&node-id=1-3&t=L8cFLmhMkwlzwRi3-1&scaling=scale-down&page-id=0%3A1&starting-point-node-id=1%3A3&mode=design" target="_blank" class="card-link">figma prototype</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                const navLinks = document.querySelectorAll('.nav-link');
+                const contents = document.querySelectorAll('.content');
+    
+                navLinks.forEach(link => {
+                    link.addEventListener('click', function(event) {
+                        event.preventDefault();
+                        const targetId = this.getAttribute('data-target');
+    
+                        contents.forEach(content => {
+                            content.classList.add('hidden');
+                        });
+    
+                        document.getElementById(targetId).classList.remove('hidden');
+    
+                        navLinks.forEach(navLink => {
+                            navLink.classList.remove('active');
+                        });
+                        this.classList.add('active');
+                    });
+                });
+            });
+        </script>
+    </body>
+</html>
